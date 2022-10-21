@@ -12,7 +12,7 @@
     let finalTax = 0;
 
     console.log(`==========================`);
-    console.log(`Старт работы taskHard_1.js  (зарплата)`);
+    console.log(`Старт работы taskHard_2.js  (зарплата прогрессивный налог)`);
 
     if (salary <= level1){
         finalTax = salary*level0Tax;
@@ -32,6 +32,6 @@
 
     console.log(`Итоговый налог ${finalTax}`);
 
-    console.log(`Конец работы taskHard_1.js  (зарплата)`);
+    console.log(`Конец работы taskHard_2.js  (зарплата прогрессивный налог)`);
     console.log(`==========================`);
     
