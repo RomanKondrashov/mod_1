@@ -1,5 +1,5 @@
 'use strict';
-/*
+
     const salary = parseFloat(prompt(`Введите ваш доход в рублях`)); 
 
     const level1 = 15000; //первый уровень зарплаты
@@ -25,4 +25,4 @@
     }
     console.log(`Конец работы taskHard_1.js  (зарплата)`);
     console.log(`==========================`);
-  */  
+  
