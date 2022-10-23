@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 const letsPlay = () => {
     const myNumber = Math.round(Math.random() * 100);
     let answer = -1;
@@ -10,7 +7,7 @@ const letsPlay = () => {
     do{
         answer = parseInt(prompt('Введите предполагаемое число'));
 
-        if (answer == null || answer == "") break;
+        if (answer == null || Number.isNaN(answer)) break;
 
         console.log(`Введено число: ${answer}`);
         if (answer > myNumber){
@@ -24,7 +21,12 @@ const letsPlay = () => {
         console.log(`---`);
     } while (answer !== myNumber);
 
-    return(`Вы угадали! Число ${answer}, Игра завершена`);
+    if (answer === myNumber){
+        return(`Вы угадали! Число ${answer}, Игра завершена`);
+    }else{
+        return(`Игра была завершена пользователем`);
+    }    
+    
 
     
 }
