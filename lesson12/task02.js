@@ -18,5 +18,5 @@ const addToArray = (arr) => {
   }
 };
 
-//console.log(`Задание 2, дополнение массива`);
-//addToArray([]);
+console.log(`Задание 2, дополнение массива`);
+addToArray([]);

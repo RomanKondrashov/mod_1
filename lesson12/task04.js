@@ -9,19 +9,17 @@ const cart = {
     return this.calculateItemPrice();
   },
 
-  set setDiscount(promocode){
-
-      switch(promocode){
-        case 'METHED': 
-          this.discount = 15;
-          break;
-          case 'NEWYEAR': 
-          this.discount = 21;
-          break;
-          default:
-            this.discount = 0; 
-      }
-
+  set setDiscount(promocode) {
+    switch (promocode) {
+      case 'METHED':
+        this.discount = 15;
+        break;
+      case 'NEWYEAR':
+        this.discount = 21;
+        break;
+      default:
+        this.discount = 0;
+    }
   },
 
   add(itemName, itemPrice, itemCount = 1) {
@@ -41,7 +39,7 @@ const cart = {
     for (const i of this.items) {
       calcPrice += i.price * i.count;
     }
-    if (this.discount) calcPrice -= calcPrice/100*(this.discount);
+    if (this.discount) calcPrice -= calcPrice / 100 * (this.discount);
     return calcPrice;
   },
   clear() {
